@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="lv"> <!-- Lapas valoda: latviešu -->
+<head>
+  <meta charset="UTF-8" /> <!-- Teksta kodējums: UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Grupu sadalītājs</title> <!-- Lapas nosaukums -->
+
+  <!-- Pievienojam CSS failu -->
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Galvene -->
+  <header>
+    <h1>Grupu sadalītājs skolotājiem</h1>
+  </header>
+
+  <!-- Galvenā satura daļa ar divām kolonnām -->
+  <main class="container">
+    
+    <!-- Kreisā kolonna: ievade -->
+    <div class="input-section">
+      <label for="students">Ievadi audzēkņu vārdus (katru jaunā rindā):</label>
+      <textarea id="students" rows="10" placeholder="Anna\nJānis\nElza\n..."></textarea>
+
+      <label for="groupSize">Maksimālais grupas izmērs:</label>
+      <input type="number" id="groupSize" min="1" value="3" />
+
+      <!-- Poga, kas izsauc funkciju -->
+      <button onclick="splitGroups()">Sadalīt grupās</button>
+    </div>
+
+    <!-- Labā kolonna: rezultāts -->
+    <div class="result-section">
+      <h2>Rezultāts:</h2>
+      <div id="groupsOutput"></div> <!-- Šeit parādīsies grupas -->
+    </div>
+  </main>
+
+  <!-- Kājene -->
+  <footer>
+    <p>&copy; 2025 Grupu sadalītājs | Izstrādāja Lauris Kralliss</p>
+  </footer>
+
+  <!-- Pievienojam JavaScript failu -->
+  <script src="script.js"></script>
+</body>
+</html>
