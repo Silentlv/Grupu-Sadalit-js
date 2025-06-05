@@ -1,3 +1,4 @@
+/* Pamata stils visam ķermenim */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -6,6 +7,7 @@ body {
   color: #333;
 }
 
+/* Galvene un kājene ar zilu fonu un baltu tekstu */
 header, footer {
   background-color: #0059b3;
   color: white;
@@ -13,6 +15,7 @@ header, footer {
   padding: 1em 0;
 }
 
+/* Galvenais konteineris ar flex layout (2 kolonnas) */
 .container {
   display: flex;
   flex-direction: row;
@@ -21,11 +24,13 @@ header, footer {
   flex-wrap: wrap;
 }
 
+/* Stils ievades un rezultātu sadaļām */
 .input-section, .result-section {
   flex: 1 1 400px;
   margin: 10px;
 }
 
+/* Tekstlauks un ievades lauki aizpilda 100% platumu */
 textarea, input {
   width: 100%;
   margin-bottom: 10px;
@@ -33,6 +38,7 @@ textarea, input {
   font-size: 1em;
 }
 
+/* Pogas stils */
 button {
   padding: 10px 20px;
   background-color: #007acc;
@@ -42,10 +48,12 @@ button {
   font-size: 1em;
 }
 
+/* Pogas stils "hover" laikā */
 button:hover {
   background-color: #005fa3;
 }
 
+/* Rāmis un fons priekš rezultātu bloka */
 #groupsOutput {
   background-color: #fff;
   padding: 10px;
